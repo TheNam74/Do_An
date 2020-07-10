@@ -16,55 +16,14 @@ struct Accounts{
 	int sex;
 	int classification;
 };
-
-struct Books{
-	char ISBN[14];
-	char name[101];
-	char author[101];
-	char publisher[101];
-	int published;
-	char category[101];
-	char prices[101];
-	int number;
-	bool exist = true;
-}; 
-
-struct Readers{
-	long code;
-	char fullname[45];
+struct Reader {
+	long Code;
+	char Fullname[45];
 	char ID[45];
-	Day DoB;
-	int sex;
-	char email[101];
-	char address[101];
-	Day createdDay;
-	Day expirationDay;
-};
-
-struct Node{
-	Books Data;
-	Node *pNext;
-	Node *pPrev;
-};
-
-struct List{
-	Node *pHead;
-	Node *pTail;
-};
-
-struct Node_Reader{
-	Readers Data;
-	Node_Reader *pNext;
-	Node_Reader *pPrev;
-};
-
-struct List_Reader{
-	Node_Reader *pHead;
-	Node_Reader *pTail;
-};
-
-struct BorrowBook{
-	char ISBN[14];
-	Day BorrowedDay;
-	Day EndDay;
+	Day DOB;
+	int Sex;
+	char Email[101];
+	char Address[101];
+	Day CreatedDate;
+	Day ExpirationDate;
 };
