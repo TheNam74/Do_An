@@ -6,7 +6,7 @@
 #include"struct.h"
 #include"users.h"
 using namespace std;
-//test
+//test2222
 int main(int argc, char* argv[]) {
 	
 	char user[21], pass[31];
