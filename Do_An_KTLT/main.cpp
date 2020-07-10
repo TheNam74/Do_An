@@ -8,7 +8,6 @@
 using namespace std;
 //test2222
 int main(int argc, char* argv[]) {
-	
 	char user[21], pass[31];
 	initSystemFolder();
 	Login(user, pass);
